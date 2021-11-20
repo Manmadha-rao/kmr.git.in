@@ -1,0 +1,108 @@
+@-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+#closer {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  z-index: 10000;
+  color: #f36b6b;
+  margin-right: 2%;
+    -webkit-animation: rotate .4s linear .4s backwards;
+            animation: rotate .4s linear .4s backwards;
+  display: none;
+}
+  
+#closer:hover {
+    color: #009688;
+}
+
+.setting {
+  position: fixed;
+  top: 0;
+  right: -101%;
+  z-index: 1000;
+  width: 30rem;
+  height: 100h;
+  background: #1e1e1e;
+  padding: 2rem;
+  padding-top: 8rem;
+  overflow-y: scroll;
+}
+  
+  .setting.active {
+    right: 0;
+    -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+    -webkit-transition: .4s linear;
+    transition: .4s linear;
+  }
+  
+  .setting::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  .setting::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  
+  .setting::-webkit-scrollbar-thumb {
+    background: #009688;
+  }
+  
+.setting .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+ul{ 
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+ul li a{
+  position: relative;
+  color: #1e1e1e;
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 40px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  border-right: 3px solid transparent;
+}
+ul li a:hover{
+  color: #009688;
+  border-right-color: #009688;
+}
+ul li{
+  line-height: 42px;
+  border-bottom: none;
+}
+ul li a{
+  font-size: 16px;
+  color: #fff;
+  padding-left: 10px;
+}

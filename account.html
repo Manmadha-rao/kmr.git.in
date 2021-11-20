@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidswear</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="css/account.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-shopping-bag"></i> KMR </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="mensware.html">Menswear</a>
+        <a href="womens.html">Womenswear</a>
+        <a href="kidsware.html">Kidswear</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <a href="account.html"><div id="login-btn" class="fas fa-user"></div></a>
+        <div id="setting-btn" class="fas fa-cog"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- side menu settings  -->
+
+<div id="closer" class="fas fa-times"></div>
+
+<div class="setting">
+
+    <div class="box">
+        <ul>
+            <li><a href="#" class="item">Dashboard</a></li>
+            <li><a href="#" class="item">fearures</a></li>
+            <li><a href="#" class="item">services</a></li>
+            <li><a href="#" class="item">portpolio</a></li>
+            <li><a href="#" class="item">overview</a></li>
+            <li><a href="#" class="item">shortcuts</a></li>
+            <li><a href="#" class="item">feedback</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--------ACCOUNT---------->
+<div class="account-page">
+  <div class="container">
+      <div class="row1">
+          <div class="container-fluid">
+              <div class="form-container">
+                  <div class="form-btn">
+                      <span onclick="login()">Login</span>
+                      <span onclick="register()">Register</span>
+                      <hr id="Indicator">
+                  </div>
+                  <form id="LoginForm">
+                      <input class="input" type="text" placeholder="Username">
+                      <input class="input" type="password" placeholder="Password" id="myInput">
+                      <span class="eye" onclick="myFunction()">
+                        <i id="hide1" class="fa fa-eye"></i>
+                        <i id="hide2" class="fa fa-eye-slash"></i>
+                      </span>
+                      <button type="submit" class="btn">Login</button>
+                      <a href="#">Forgot password</a>
+                  </form>
+                  <form id="RegForm">
+                    <input class="input" type="text" placeholder="Username">
+                    <input class="input" type="email" placeholder="Email">
+                    <input class="input" type="password" placeholder="Password" id="myInput1">
+                    <span class="eye" onclick="myFunction1()">
+                      <i id="hide3" class="fa fa-eye"></i>
+                      <i id="hide4" class="fa fa-eye-slash"></i>
+                    </span>
+                    <button type="submit" class="btn">Register</button>                            
+                </form>
+              </div>
+          </div>  
+      </div>
+  </div>
+  <div class="sam">
+    <div class="col-2">
+      <img src="images/image1.png" width="100%">
+    </div>
+    <div class="col-2" id="sam1">
+      <h1>
+        Give Your Workout <br> A NEW Style</h1>
+        <P>
+        Success isn't always about greatness. It's about consistency. Consistent hard work gains success.<br> Greatness will come.
+        </P>
+    </div>
+  </div>  
+</div>
+
+<!-------------------footer--------------------->
+
+<div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h2>Download Our App</h2>
+          <p>Download App for android and ios mobile phone.</p>
+          <div class="app-logo">
+            <img src="images/play-store.png">
+            <img src="images/app-store.png">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-white.png">
+          <p>Our Purpose is To Sustainably Make the Pleasure and Benfits of New Trend Accessible to the Many </p>
+        </div>
+        <div class="footer-col-3">
+          <h2>Useful Links</h2>
+          <ul>
+            <li>Return Policy</li>
+            <li>Coupons</li>
+            <li>Join Affiliate</li>
+            <li>Cart</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h2>Follow US</h2>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>YouTube</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2021 - KMR The Trend</p>    
+    </div>
+  </div>
+  <!----js for toggle-->
+  <script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+         function register(){
+             RegForm.style.transform = "translateX(0px)";
+             LoginForm.style.transform = "translateX(0px)";
+             Indicator.style.transform = "translateX(100px)";
+
+         }
+
+         function login(){
+             RegForm.style.transform = "translateX(300px)";
+             LoginForm.style.transform = "translateX(300px)";
+             Indicator.style.transform = "translateX(0px)";
+
+         }
+  </script>
+<script>
+  function myFunction(){
+    var x = document.getElementById("myInput");
+    var y = document.getElementById("hide1");
+    var z = document.getElementById("hide2");
+
+    if(x.type === 'password'){
+      x.type ='text';
+      y.style.display="block";
+      z.style.display="none";
+    }
+    else{
+      x.type ='password';
+      y.style.display="none";
+      z.style.display="block";
+    }
+  }
+
+</script>
+<script>
+  function myFunction1(){
+    var x = document.getElementById("myInput1");
+    var y = document.getElementById("hide3");
+    var z = document.getElementById("hide4");
+
+    if(x.type === 'password'){
+      x.type ='text';
+      y.style.display="block";
+      z.style.display="none";
+    }
+    else{
+      x.type ='password';
+      y.style.display="none";
+      z.style.display="block";
+    }
+  }
+</script>
+         
+      
+
+<!-- custom js file link  -->
+<script src="js/home.js"></script>
+      
+ </body>
+</html>

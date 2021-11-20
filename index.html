@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- online js links  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- online css links  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="css/mensware.css">
+
+    <!-- custom js file link  -->
+    <script src="js/2home.js"></script>
+    <link rel="stylesheet" href="css/2home.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"><i class="fas fa-shopping-bag"></i> KMR </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="mensware.html">Menswear</a>
+        <a href="womens.html">Womenswear</a>
+        <a href="kidsware.html">Kidswear</a>
+        <!--<a href="blog.html">About</a>
+        <a href="contact.html">contact</a>-->
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <a href="account.html"><div id="login-btn" class="fas fa-user"></div></a>
+        <div id="setting-btn" class="fas fa-cog"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- side menu settings  -->
+
+<div id="closer" class="fas fa-times"></div>
+
+<div class="setting">
+
+    <div class="box">
+        <ul>
+            <li><a href="#" class="item">Dashboard</a></li>
+            <li><a href="#" class="item">fearures</a></li>
+            <li><a href="#" class="item">services</a></li>
+            <li><a href="#" class="item">portpolio</a></li>
+            <li><a href="#" class="item">overview</a></li>
+            <li><a href="#" class="item">shortcuts</a></li>
+            <li><a href="#" class="item">feedback</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-------------home sliders------------------->
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/banner2.jpg" alt="First slide">
+      <div class="carousel-caption d-none d-block" id="carousel-caption">
+        <h1>Upto 50% Off</h1>
+        <p>Men's Fashion</p>
+        <a class="btn" href="mensware.html">Shop Now</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/banner3.jpg" alt="Second slide">
+      <div class="carousel-caption d-none d-block" id="carousel-caption">
+        <h1>Upto 50% Off</h1>
+        <p>Kid's Fashion</p>
+        <a class="btn" href="kidsware.html">Shop Now</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/banner1.png" alt="Third slide">
+      <div class="carousel-caption d-none d-block" id="carousel-caption">
+        <h1>Upto 50% Off</h1>
+        <p>Women's Fashion</p>
+        <a class="btn" href="womens.html">Shop Now</a>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!----------------------second images slides-------------------->
+
+<div class="card bg-dark text-white w-60" id="card">
+  <img class="d-block w-50" src="images/banner_3.png" class="img-fluid" alt="Responsive image">
+  <div class="carousel-caption d-none d-block" id="spacial">
+    <h2>Upto 50% Off</h2>
+    <h1>For Premium User's</h1>
+    <a class="btn" href="womens.html">Shop Now</a>
+  </div>
+</div>
+
+<!----------------------new arrivals----------->
+
+      <div class="jumbotron">
+        <h1 class="heading">NEW  <span>ARRIVALS</span> </h1>
+        <div class="categories">
+          <div class="small-container">
+            <div class="row">
+              <div class="col-3">
+                <a href="men_blazer1.html">
+                <img src="images/singleimg_view/men_blazer5.jpg"></a>
+                <h4>branded Blazer by KMR</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>2099.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div>
+              <div class="col-3">
+                <a href="kidsware.html"></a>
+                <img src="images/kids wear/product_img4.jpg">
+                <h4>Cilian sneaker</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>1449.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div>
+              <div class="col-3">
+                <a href="men_jacket4.html">
+                  <img src="images/singleimg_view/men_jacket6.jpg"></a>
+                <h4>Herringbone jacket</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>2999.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div>
+              <div class="col-3">
+                <a href="men_jeans2.html">
+                  <img src="images/singleimg_view/men_jeans8.jpg"></a>
+                <h4>madison jeans</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>809.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div>
+              <div class="col-3">
+                <a href="men_s2.html">
+                  <img src="images/singleimg_view/men_shirt5.jpg"></a>
+                <h4>Sermon shirt</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>699.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div>
+              <div class="col-3">
+                <a href="kidsware.html"></a>
+                <img src="images/kids wear/product_img9.jpg">
+                <h4>Damian shoe</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>1269.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div>
+              <div class="col-3">
+                <a href="men_ts1.html">
+                  <img src="images/singleimg_view/mts9.png"></a>
+                  <h4>tommy regular fit</h4>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <p>689.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+              <div class="col-3">
+                <a href="men_shoe3.html">
+                  <img src="images/singleimg_view/men_shoe13.jpg"></a>
+                <h4>good product</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>1569.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                <h4></h4>
+              </div>
+              <div class="col-3">
+                <a href="women_dress4.html">
+                  <img src="images/women single_images/women_dress14.jpg"></a>
+                <h4>Aline maxi dress</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>759.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div> 
+              <div class="col-3">
+                <a href="women_coat1.html">
+                  <img src="images/women single_images/women_coat2.jpg"></a>
+                <h4>Trenif solid overcoat</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>2429.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div>
+              <div class="col-3">
+                <a href="women_jacket3.html">
+                  <img src="images/women single_images/women_jackets9.jpg"></a>
+                <h4>Premise eden jacket</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>1937.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a> 
+              </div>
+              <div class="col-3">
+                <a href="women_shoe1.html">
+                  <img src="images/women single_images/women_shoes1.jpg"></a>
+                <h4>Sparx sneakers</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>1349.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a> 
+              </div>
+              <div class="col-3">
+                <a href="women_sandals2.html">
+                  <img src="images/women single_images/women_sandals5.jpg"></a>
+                <h4>Shimmer wedge</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>799.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a> 
+              </div>
+              <div class="col-3">
+                <a href="women_access1.html">
+                  <img src="images/women single_images/women_access1.jpg"></a>
+                <h4>Cartlin Handbag</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>709.00</p>
+                <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-----------------------best collections lable-------------------->   
+
+<div class="card bg-dark text-white w-100">
+  <img class="d-block w-50" src="images/banner.png" class="img-fluid" alt="Responsive image">
+  <div class="carousel-caption d-none d-block" id="spacial">
+    <h1 class="pb-3">Best Collections</h1>
+    <h2 class="pb-3">Upto 30% Off for NEW User's</h2>
+    <a class="btn" href="account.html">Sign_Up Now</a>
+  </div>
+</div>
+
+<!-----------------best collection sliders---------------->
+
+<h1 class="heading" id="heading">Best <span>Collections</span></h1>
+
+<div id="best">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" id="carousel-item">
+    <div class="carousel-item active" id="carousel-item">
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <a href="men_jacket5.html">
+            <img src="images/singleimg_view/men_jacket1.jpg"></a>
+          <h4>Sawteeth jacket</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>2537.00</p>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <a href="kidsware.html"></a>
+          <img src="images/kids wear/product_img4.jpg">
+          <h4>Cilian sneaker</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>1449.00</p>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <a href="women_dress1.html">
+            <img src="images/women single_images/women_dress2.jpg"></a>
+          <h4>Ethnic dress</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>999.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" id="carousel-item">
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <a href="men_access1.html">
+            <img src="images/singleimg_view/men_access5.jpg"></a>
+          <h4>hornbull brand</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>709.00</p>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <a href="men_shoe5.html">
+            <img src="images/singleimg_view/men_shoe22.jpg"></a>
+          <h4>velvet lace shoe</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>1299.00</p>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <a href="men_s4.html">
+            <img src="images/singleimg_view/men_shirt14.jpg"></a>
+          <h4>madison striped shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>559.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" id="carousel-item">
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <a href="women_jacket5.html">
+            <img src="images/women single_images/women_jackets17.jpg"></a>
+          <h4>syambal jacket</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>1999.00</p>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <a href="women_coat3.html">
+            <img src="images/women single_images/women_coat12.jpg"></a>
+          <h4> The woolen coat</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>1909.00</p>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <a href="men_blazer1.html">
+            <img src="images/singleimg_view/men_blazer5.jpg"></a>
+            <h4>branded Blazer</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>2099.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<!-------------------footer--------------------->
+
+<div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h2>Download Our App</h2>
+          <p>Download App for android and ios mobile phone.</p>
+          <div class="app-logo">
+            <img src="images/play-store.png">
+            <img src="images/app-store.png">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-white.png">
+          <p>Our Purpose is To Sustainably Make the Pleasure and Benfits of New Trend Accessible to the Many </p>
+        </div>
+        <div class="footer-col-3">
+          <h2>Useful Links</h2>
+          <ul>
+            <li>Return Policy</li>
+            <li>Coupons</li>
+            <li>Join Affiliate</li>
+            <li>Cart</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h2>Follow US</h2>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>YouTube</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2021 - KMR The Trend</p>    
+    </div>
+  </div>
+
+<!-- custom js file link  -->
+<script src="js/home.js"></script>
+
+</body>
+</html>

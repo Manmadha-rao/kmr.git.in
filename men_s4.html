@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View product page</title>
+
+    <!-- online js links  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- online css links  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="css/imageview.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-shopping-bag"></i> KMR </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="mensware.html">Menswear</a>
+        <a href="womens.html">Womenswear</a>
+        <a href="kidsware.html">Kidswear</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <a href="account.html"><div id="login-btn" class="fas fa-user"></div></a>
+        <div id="setting-btn" class="fas fa-cog"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- side menu settings  -->
+
+<div id="closer" class="fas fa-times"></div>
+
+<div class="setting">
+
+    <div class="box">
+        <ul>
+            <li><a href="#" class="item">Dashboard</a></li>
+            <li><a href="#" class="item">fearures</a></li>
+            <li><a href="#" class="item">services</a></li>
+            <li><a href="#" class="item">portpolio</a></li>
+            <li><a href="#" class="item">overview</a></li>
+            <li><a href="#" class="item">shortcuts</a></li>
+            <li><a href="#" class="item">feedback</a></li>
+        </ul>
+    </div>
+</div>
+
+<!------------------singleview image-------------->
+
+<div class="small-container" id="small-container">
+  <div class="product-small-img">
+    <img src="images/singleimg_view/men_shirt14.jpg" onclick="myFunction(this)">
+          <img src="images/singleimg_view/men_shirt15.jpg" onclick="myFunction(this)">
+          <img src="images/singleimg_view/men_shirt16.jpg" onclick="myFunction(this)">
+          <img src="images/singleimg_view/men_shirt17.jpg" onclick="myFunction(this)">
+  </div>
+  <div class="img-container">
+    <img id="imagebox" src="images/singleimg_view/men_shirt14.jpg">
+  </div>
+  <div class="jumbtron">
+    <p>Home / T-Shirt</p>
+    <h1>madison striped shirt by KMR</h1>
+      <h3>559.00</h3>
+    <select name="" id="">
+        <option value="">Select Size</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+    </select>
+    <input type="number" value="1">
+    <a id="tocart" href="#" class="btn"><i class="fa fa-shopping-cart"></i>
+      Add to Cart</a>
+    <h2>Product Details <i id="pro" class="fa fa-indent"></i></h2>
+    <p class="para">Give your summer wardrobe a style upgrade with the KMR Men's Active Shirts.Team it with a pair of shorts for your morning workout or a denims for an evening out with the guys.</p>
+</div>      
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h2>Recommend products<a id="vi" href="men_shirts.html">View more</a></h2>
+  </div>
+  <div class="row">
+    <!--<div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <a href="men_s5.html">
+            <img src="images/singleimg_view/men_shirt18.jpg"></a>
+          <h4>Smash shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>569.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <a href="men_s4.html">
+            <img src="images/singleimg_view/men_shirt14.jpg"></a>
+          <h4>madison striped shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>559.00</p>
+        </div>
+      </div>
+    </div>-->
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <a href="men_s3.html">
+            <img src="images/singleimg_view/men_shirt10.jpg"></a>
+          <h4>Smash shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>509.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <a href="men_s2.html">
+            <img src="images/singleimg_view/men_shirt5.jpg"></a>
+          <h4>Sermon shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>699.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <a href="men_s1.html">
+            <img src="images/singleimg_view/men_shirt4.jpg"></a>
+          <h4>Pacific shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>599.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <a href="men_s6.html">
+            <img src="images/singleimg_view/men_shirt22.jpg"></a>
+          <h4>madison striped shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>459.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction(smallImg)
+{
+    var fullImg = document.getElementById("imagebox");
+    fullImg.src = smallImg.src;
+}
+</script>
+
+<!-------------------footer--------------------->
+
+<div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h2>Download Our App</h2>
+          <p>Download App for android and ios mobile phone.</p>
+          <div class="app-logo">
+            <img src="images/play-store.png">
+            <img src="images/app-store.png">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-white.png">
+          <p>Our Purpose is To Sustainably Make the Pleasure and Benfits of New Trend Accessible to the Many </p>
+        </div>
+        <div class="footer-col-3">
+          <h2>Useful Links</h2>
+          <ul>
+            <li>Return Policy</li>
+            <li>Coupons</li>
+            <li>Join Affiliate</li>
+            <li>Cart</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h2>Follow US</h2>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>YouTube</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2021 - KMR The Trend</p>    
+    </div>
+  </div>
+
+<!-- custom js file link  -->
+<script src="js/home.js"></script>
+
+</body>
+</html>
